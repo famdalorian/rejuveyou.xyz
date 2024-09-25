@@ -1,0 +1,27 @@
+{
+  "name": "rejuveyou.xyz",
+  "version": "1.0.0",
+  "description": "rejuveyou page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "nodemon index.js",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run backend \" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "handlebars": "^4.7.8",
+    "mongoose": "^8.5.4",
+    "nodemon": "^3.1.4",
+    "react-router-dom": "^6.26.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
