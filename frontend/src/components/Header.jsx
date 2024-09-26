@@ -3,7 +3,10 @@ import React from 'react';
 function Header() {
   return (
     <header>
-      <h1>Rejuveyou.uk</h1>
+      <div className="header-logo-title">
+        <img src="/images/rjylogo.png" alt="Rejuve You Logo" className="logo" />
+        <h1>Rejuve You</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#services">Services</a></li>

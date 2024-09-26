@@ -40,7 +40,7 @@ function App() {
       <nav>
         <ul>
           <li><button onClick={() => setActiveSection('services')}>Services</button></li>
-          <li><button onClick={() => setActiveSection('booking')}>Booking</button></li>
+         
           <li><button onClick={() => setActiveSection('about')}>About</button></li>
           <li><button onClick={() => setActiveSection('testimonials')}>Testimonials</button></li>
           <li><button onClick={() => setActiveSection('contact')}>Contact</button></li>

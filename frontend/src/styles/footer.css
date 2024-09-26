@@ -1,0 +1,59 @@
+/* Sticky footer at the bottom */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+  /* Footer visible state */
+  .footer.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Footer hidden state */
+  .footer.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons li {
+    display: inline;
+  }
+  
+  .footer-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #f1948a; /* Change to your preferred hover color */
+  }
+  
+  .footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  

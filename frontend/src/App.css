@@ -1,41 +1,40 @@
 :root {
-  --pink: #f5b7b1; /* Softer, more sophisticated pink */
-  --dark-pink: #f1948a; /* A darker shade of pink for contrast */
+  --pink: #f5b7b1;
+  --dark-pink: #f1948a;
   --dark: #333;
   --light: #FFF;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --accent: #555;
-  --gold: #d4af37; /* A more muted and softer gold */
+  --gold: #d4af37;
   --gold-gradient: linear-gradient(45deg, #f5b7b1, #f1948a);
+}
+
+/* Global Settings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Playfair Display', serif;
   background-color: var(--light);
   color: var(--dark);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   text-align: center;
 }
 
-/* Global styles */
-* {
-  box-sizing: border-box;
-}
-
-/* Header and Typography */
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
   color: var(--dark-pink);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 20px 0;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* Decorative lines under headers */
 h1::after, h2::after, h3::after {
   content: '';
   display: block;
@@ -45,6 +44,7 @@ h1::after, h2::after, h3::after {
   margin: 10px auto;
 }
 
+/* Navigation Styles */
 nav {
   background: var(--pink);
   padding: 1.5rem;
@@ -60,13 +60,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 20px;
+  gap: 20px;
 }
 
 nav ul li a {
@@ -95,6 +89,12 @@ nav ul li a:hover, nav ul li a:focus {
   border-radius: 15px;
 }
 
+p, .content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 /* Button Styles */
 button, .button {
   background-color: var(--pink);
@@ -120,6 +120,7 @@ button:hover, .button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* CTA Button Special */
 .cta-button {
   background-color: var(--dark-pink);
   color: var(--light);
@@ -145,7 +146,6 @@ input, textarea {
   border-radius: 8px;
   font-family: 'Playfair Display', serif;
   font-size: 16px;
-  display: block;
 }
 
 input:focus, textarea:focus {
@@ -163,6 +163,25 @@ footer {
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   border-top: 3px solid var(--dark-pink);
+}
+
+.footer-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  color: var(--light);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: var(--dark-pink);
 }
 
 /* Art Deco patterns and accents */
@@ -200,7 +219,7 @@ h3 {
 
   button {
     padding: 10px 20px;
-    font-size: 3.5vw;
+    font-size: 1rem;
   }
 
   .content {

@@ -1,0 +1,101 @@
+/* General header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5b7b1; /* Adjust according to your theme */
+  }
+  
+  .header-logo-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px; /* Default size for larger screens */
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Smooth animation for floating */
+  }
+  
+  .logo:hover {
+    transform: translateY(-5px); /* Float up slightly */
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f1948a;
+  }
+  
+  /* Responsive design for mobile and tablets */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-logo-title {
+      margin-bottom: 15px;
+    }
+  
+    .logo {
+      width: 50px; /* Adjust the logo size for tablets */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 0.9rem; /* Reduce font size slightly on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 40px; /* Smaller logo for mobile */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    nav ul li a {
+      font-size: 0.8rem; /* Smaller font for mobile devices */
+    }
+  
+    header {
+      padding: 10px 5px;
+    }
+  
+    .header-logo-title {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Reduce the size of the title on mobile */
+    }
+  }
+  
