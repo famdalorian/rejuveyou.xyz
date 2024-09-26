@@ -15,11 +15,15 @@ header {
   .logo {
     width: 60px; /* Default size for larger screens */
     margin-right: 15px;
-    transition: transform 0.3s ease; /* Smooth animation for floating */
+    transition: transform 0.3s ease;
   }
   
   .logo:hover {
     transform: translateY(-5px); /* Float up slightly */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Default font size for larger screens */
   }
   
   /* Navigation styling */
@@ -50,7 +54,7 @@ header {
     header {
       flex-direction: column;
       align-items: center;
-      text-align: center;
+      padding: 15px; /* Reduce padding on smaller screens */
     }
   
     .header-logo-title {
@@ -58,7 +62,11 @@ header {
     }
   
     .logo {
-      width: 50px; /* Adjust the logo size for tablets */
+      width: 50px; /* Smaller logo for tablets */
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Smaller font for tablets */
     }
   
     nav ul {
@@ -67,13 +75,17 @@ header {
     }
   
     nav ul li a {
-      font-size: 0.9rem; /* Reduce font size slightly on tablets */
+      font-size: 0.9rem; /* Slightly smaller font for tablets */
     }
   }
   
   @media (max-width: 480px) {
     .logo {
-      width: 40px; /* Smaller logo for mobile */
+      width: 40px; /* Even smaller logo for mobile */
+    }
+  
+    h1 {
+      font-size: 1.3rem; /* Reduce the title size for mobile */
     }
   
     nav ul {
@@ -82,20 +94,16 @@ header {
     }
   
     nav ul li a {
-      font-size: 0.8rem; /* Smaller font for mobile devices */
+      font-size: 0.8rem; /* Smaller font for mobile */
     }
   
     header {
-      padding: 10px 5px;
+      padding: 10px 5px; /* Reduce padding for mobile devices */
     }
   
     .header-logo-title {
       flex-direction: column;
       margin-bottom: 10px;
-    }
-  
-    h1 {
-      font-size: 1.5rem; /* Reduce the size of the title on mobile */
     }
   }
   
