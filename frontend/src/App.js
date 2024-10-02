@@ -34,12 +34,13 @@ function App() {
       {/* Navigation for sections */}
       <nav>
         <ul>
+          {" "}
+          <Header />
           <li>
             <button onClick={() => setActiveSection("services")}>
               Services
             </button>
           </li>
-
           <li>
             <button onClick={() => setActiveSection("about")}>About</button>
           </li>
@@ -53,7 +54,6 @@ function App() {
           </li>
         </ul>
       </nav>{" "}
-      <Header />
       {/* Hero section */}
       <Hero />
       {/* Conditionally rendered sections */}
