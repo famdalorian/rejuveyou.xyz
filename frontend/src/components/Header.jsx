@@ -7,7 +7,7 @@ function Header() {
     <header>
       <div className="header-logo-title">
         <img src={Logo} alt="Rejuve You Logo" className="logo" />  {/* Correct usage of image */}
-        
+        <h2>rejuve you</h2>
       </div>
      
     </header>

@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Booking from "./components/Booking";
+import Logo from "./components/rjylogo.png";
 import "./App.css";
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
           <span className={isNavOpen ? "bar open" : "bar"}></span>
           <span className={isNavOpen ? "bar open" : "bar"}></span>
         </div>
+        <img src={Logo} alt="Rejuve You Logo" className="logo" />  {/* Correct usage of image */}
+        <h2>rejuve you</h2>
         <ul className={isNavOpen ? "nav-open" : ""}>
           <Header />
           <li>

@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f5b7b1; /* Adjust according to your theme */
+    background-color: transparent; /* Adjust according to your theme */
   }
   
   .header-logo-title {
