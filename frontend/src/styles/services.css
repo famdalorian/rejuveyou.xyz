@@ -5,20 +5,27 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: #333;
-  }
-  
-  /* Title Styling */
-  #services h2 {
-    font-size: 2.8rem;
+    background: linear-gradient(145deg, #ffd1b3, #f5b7b1);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Title Styling */
+#services h2 {
+    font-size: 3rem;
     margin-bottom: 30px;
     font-weight: 700;
     color: #f1948a;
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  #services h2::after {
+    letter-spacing: 4px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#services h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -26,76 +33,105 @@
     background-color: #f1948a;
     margin: 15px auto;
     border-radius: 2px;
-  }
-  
-  /* Services List Styles */
-  .services-list {
+    opacity: 0.8;
+}
+
+/* Services List Styling */
+.services-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-  
-  /* Service Item Styling with Art Deco Accents */
-  .service-item {
+    gap: 30px;
+    position: relative;
+}
+
+/* Service Item Styling with Advanced Art Deco Accents */
+.service-item {
     background-color: #fff;
     border: 2px solid #f5b7b1;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 25px;
     cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-  }
-  
-  .service-item:hover {
-    background-color: #f5b7b1;
+    z-index: 1;
+}
+
+.service-item:hover {
+    background-color: #f1948a;
     color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Service Header */
-  .service-header {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.service-item:hover h3,
+.service-item:hover p,
+.service-item:hover .service-price {
+    color: #fff; /* Ensuring text turns white on hover */
+}
+
+.service-item:hover i,
+.service-item:hover .toggle-icon {
+    color: #fff;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(241, 148, 138, 0.2), transparent);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Service Header */
+.service-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-  }
-  
-  .service-header h3 {
-    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.service-header h3 {
+    font-size: 1.7rem;
     flex-grow: 1;
     text-align: left;
     margin-left: 15px;
     font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .service-header i {
+    color: #333; /* Default color */
+    transition: color 0.4s ease;
+}
+
+.service-header i {
     font-size: 2rem;
     color: #f1948a;
     transition: color 0.3s ease;
-  }
-  
-  .service-header .toggle-icon {
+}
+
+.service-header .toggle-icon {
     font-size: 1.8rem;
     color: #f1948a;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  /* Rotate toggle icon when active */
-  .service-item.active .toggle-icon {
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Rotate toggle icon when active */
+.service-item.active .toggle-icon {
     color: #fff;
     transform: rotate(180deg);
-  }
-  
-  .service-item.active .service-header i {
+}
+
+.service-item.active .service-header i {
     color: #fff;
-  }
-  
-  /* Service Details */
-  .service-details {
+}
+
+/* Service Details */
+.service-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,121 +139,129 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
     text-align: left;
     padding: 0 10px;
-  }
-  
-  .service-item.active .service-details {
-    max-height: 500px;
+}
+
+.service-item.active .service-details {
+    max-height: 600px;
     opacity: 1;
-    padding: 10px;
-  }
-  
-  .service-text {
+    padding: 20px;
+}
+
+.service-text {
     flex: 1;
     padding-right: 20px;
-  }
-  
-  .service-text p {
+}
+
+.service-text p {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
     transition: all 0.4s ease;
-  }
-  
-  .service-price {
+}
+
+.service-item:hover .service-text p {
+    color: #fff; /* Ensure paragraph text changes to white */
+}
+
+.service-price {
     font-weight: 700;
-    color: #333;
-  }
-  
-  /* Image Styling with Box Shadows and Borders */
-  .service-image {
-    width: 150px;
-    height: 150px;
+    color: #333; /* Default color */
+    transition: color 0.3s ease;
+}
+
+.service-item:hover .service-price {
+    color: #fff; /* Price changes to white on hover */
+}
+
+/* Image Styling with Depth, Box Shadows, and Smooth Transitions */
+.service-image {
+    width: 160px;
+    height: 160px;
     border-radius: 15px;
     opacity: 0;
     border: 2px solid #f1948a;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Box shadow for a 3D effect */
-    transition: opacity 0.6s ease, transform 0.3s ease;
-  }
-  
-  .service-item.active .service-image {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deep box shadow for a 3D effect */
+    transition: opacity 0.6s ease, transform 0.4s ease;
+}
+
+.service-item.active .service-image {
     opacity: 1;
-    transform: scale(1.05); /* Slight zoom effect on reveal */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
+    transform: scale(1.08); /* Slight zoom effect for visual impact */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
     #services {
-      padding: 30px 15px;
+        padding: 30px 15px;
     }
-  
+
     .service-header h3 {
-      font-size: 1.3rem;
+        font-size: 1.5rem;
     }
-  
+
     .service-header i {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-  
+
     .service-header .toggle-icon {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .service-item {
-      padding: 15px;
+        padding: 20px;
     }
-  
+
     .service-text {
-      padding-right: 10px;
+        padding-right: 10px;
     }
-  
+
     .service-image {
-      width: 120px;
-      height: 120px;
+        width: 130px;
+        height: 130px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     #services {
-      padding: 20px 10px;
+        padding: 20px 10px;
     }
-  
+
     #services h2 {
-      font-size: 2rem;
+        font-size: 2.5rem;
     }
-  
+
     .service-header h3 {
-      font-size: 1.1rem;
+        font-size: 1.3rem;
     }
-  
+
     .service-header i {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .service-header .toggle-icon {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  
+
     .service-item {
-      padding: 12px;
+        padding: 18px;
     }
-  
+
     /* Stack the image and text vertically on mobile */
     .service-details {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .service-text {
-      padding-right: 0;
+        padding-right: 0;
     }
-  
+
     .service-image {
-      width: 100px;
-      height: 100px;
-      margin-top: 10px;
+        width: 110px;
+        height: 110px;
+        margin-top: 15px;
     }
-  }
-  
+}
