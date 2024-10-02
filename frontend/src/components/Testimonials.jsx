@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/testimonials.css';
 
 function Testimonials() {
   const testimonials = [
@@ -13,7 +14,7 @@ function Testimonials() {
       <div className="testimonial-list">
         {testimonials.map(testimonial => (
           <div key={testimonial.id} className="testimonial">
-            <p>"{testimonial.text}"</p>
+            <p className="testimonial-text">"{testimonial.text}"</p>
             <p className="testimonial-author">- {testimonial.name}</p>
           </div>
         ))}

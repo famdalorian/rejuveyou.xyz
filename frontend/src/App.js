@@ -11,6 +11,7 @@ import "./App.css";
 
 function App() {
   const [activeSection, setActiveSection] = useState(""); // State to track active section
+  const [isNavOpen, setIsNavOpen] = useState(false); // State to toggle mobile nav
 
   const renderSection = () => {
     switch (activeSection) {
@@ -33,8 +34,12 @@ function App() {
     <div className="App">
       {/* Navigation for sections */}
       <nav>
-        <ul>
-          {" "}
+        <div className="hamburger" onClick={() => setIsNavOpen(!isNavOpen)}>
+          <span className={isNavOpen ? "bar open" : "bar"}></span>
+          <span className={isNavOpen ? "bar open" : "bar"}></span>
+          <span className={isNavOpen ? "bar open" : "bar"}></span>
+        </div>
+        <ul className={isNavOpen ? "nav-open" : ""}>
           <Header />
           <li>
             <button onClick={() => setActiveSection("services")}>
@@ -53,7 +58,7 @@ function App() {
             <button onClick={() => setActiveSection("contact")}>Contact</button>
           </li>
         </ul>
-      </nav>{" "}
+      </nav>
       {/* Hero section */}
       <Hero />
       {/* Conditionally rendered sections */}

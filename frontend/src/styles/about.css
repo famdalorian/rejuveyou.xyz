@@ -1,0 +1,181 @@
+/* About Section Styling */
+#about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background: linear-gradient(145deg, #ffd1b3, #fce4ec);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 192, 203, 0.5), transparent);
+    z-index: 1;
+  }
+  
+  #about::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(230, 230, 250, 0.5), transparent);
+    z-index: 1;
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #f1948a;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* Floating Line Under Title */
+  #about h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #f1948a;
+    margin: 15px auto;
+    border-radius: 2px;
+    opacity: 0.9;
+    z-index: 2;
+    position: relative;
+  }
+  
+  #about p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 900px;
+    margin: 20px auto;
+    z-index: 2;
+    position: relative;
+    animation: fadeIn 1.8s ease;
+  }
+  
+  /* Team Section */
+  .team {
+    margin-top: 50px;
+    background: var(--lavender);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #f1948a;
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .team h3 {
+    font-size: 2rem;
+    color: #f1948a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .team ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .team li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    color: var(--dark);
+    position: relative;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .team li::before {
+    content: '●';
+    font-size: 1.5rem;
+    color: #f1948a;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  
+  .team li:hover {
+    color: #f1948a;
+    transition: all 0.3s ease;
+  }
+  
+  #about, .team {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #about:hover .team {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Smooth Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Typography */
+  @media (max-width: 768px) {
+    #about h2 {
+      font-size: 2.5rem;
+    }
+  
+    .team h3 {
+      font-size: 1.8rem;
+    }
+  
+    .team li {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #about h2 {
+      font-size: 2rem;
+    }
+  
+    .team h3 {
+      font-size: 1.6rem;
+    }
+  
+    .team li {
+      font-size: 0.9rem;
+    }
+  
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+  
