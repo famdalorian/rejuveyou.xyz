@@ -3,9 +3,9 @@ import '../styles/testimonials.css';
 
 function Testimonials() {
   const testimonials = [
-    { id: 1, name: 'Jane Doe', text: 'I love the results of my facial treatment. My skin has never looked better!' },
-    { id: 2, name: 'John Smith', text: 'The laser hair removal treatment was quick and effective. Highly recommended!' },
-    { id: 3, name: 'Emily Brown', text: 'The staff is professional and friendly. I always feel comfortable here.' }
+    { id: 1, name: 'Jane', text: 'I’ve never felt more confident in my skin. The results speak for themselves!' },
+    { id: 2, name: 'John', text: 'The experience was professional and seamless. I’m so glad I chose this clinic!' },
+    { id: 3, name: 'Emily', text: 'I always feel so welcomed and comfortable during my visits. Highly recommended!' }
   ];
 
   return (
