@@ -23,7 +23,7 @@ function Contact() {
         </div>
         <div className="contact-item">
           <FaFacebook size={24} />
-          <p>Like us on <a href="https://facebook.com/yourbeautyshop" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+          <p>Like us on <a href="https://www.facebook.com/p/Rejuve-You-Aesthetics-100067734095254/?_rdr" target="_blank" rel="noopener noreferrer">Facebook</a></p>
         </div>
       </div>
     </section>
