@@ -21,7 +21,7 @@ function Services() {
     { id: 13, name: 'Nefertiti Neck Lift', description: 'Botox for a lifted, contoured neck.', price: '£160', icon: 'fas fa-neck',image:'/images/rjy13.png' },
     { id: 14, name: 'Dermal Fillers - Lips, Cheeks, Chin, Jaw', description: 'Fillers to add volume and definition.', price: 'From £120 for 1.1ml', icon: 'fas fa-face',image:'/images/rjy14.png' },
     { id: 15, name: 'PRP - Hair Restoration', description: 'Platelet-rich plasma treatment for hair loss.', price: 'From £80', icon: 'fas fa-hair' ,image:'/images/rjy15.png' },
-    { id: 16, name: 'Filler Dissolving', description: 'Dissolve unwanted filler.', price: 'From £60 per session', icon: 'fas fa-trash',image:'/images/rjy16.png' },
+    { id: 16, name: 'Filler Dissolving', description: 'Dissolve unwanted or migrated filler.', price: 'From £60 per session', icon: 'fas fa-trash',image:'/images/rjy16.png' },
     { id: 17, name: 'Fat Dissolving with RF (Small Area)', description: 'Fat dissolving treatment for small areas.', price: '£60', icon: 'fas fa-snowflake',image:'/images/rjy18.png' },
     { id: 18, name: 'Fat Dissolving with RF (Large Area)', description: 'Fat dissolving treatment for large areas.', price: '£100', icon: 'fas fa-snowflake',image:'/images/rjy19.png' },
     { id: 19, name: 'Vitamins - B12 / C / D', description: 'Vitamin injections for health and wellness.', price: '£15', icon: 'fas fa-capsules' ,image:'/images/rjy17.png' }
