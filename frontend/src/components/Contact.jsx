@@ -15,7 +15,7 @@ function Contact() {
         </div>
         <div className="contact-item">
           <FaPhone size={24} />
-          <p>Call us at <a href="tel:+44 7967 397 257">+44 7967 397 257</a></p>
+          <p>Call us <a href="tel:+44 7967 397 257">Here</a></p>
         </div>
         <div className="contact-item">
           <FaInstagram size={24} />
