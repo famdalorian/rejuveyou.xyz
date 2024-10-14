@@ -11,7 +11,7 @@ function Contact() {
       <div className="contact-icons">
         <div className="contact-item">
           <FaEnvelope size={42} />
-          <p>Email us <a href="mailto:info@beautyshop.com">Here</a></p>
+          <p>Email us <a href="mailto:Rejuve_you@outlook.com">Here</a></p>
         </div>
         <div className="contact-item">
           <FaPhone size={42} />
