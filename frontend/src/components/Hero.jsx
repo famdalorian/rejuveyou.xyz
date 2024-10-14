@@ -1,13 +1,13 @@
-import React from 'react';
-import '../../src/App.css'
+import React from "react";
+import "../../src/App.css";
 
 function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
         <h1>Welcome to Rejuve You</h1>
-        <p>Your journey to a better you,  starts here.</p>
-        <button className="cta-button">talk to us Now</button>
+        <p>Your journey to a better you, starts here.</p>
+        <button className="cta-button">talk to us Now</button> <br />
       </div>
     </section>
   );
